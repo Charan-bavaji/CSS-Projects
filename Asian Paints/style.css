@@ -16,15 +16,25 @@ body {
   #button_content {
     padding-top: 20px;
   }
+
+  .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
   #walls {
     display: grid;
     grid-template-columns: auto auto auto;
     margin: 20px;
   }
-  
-  #wall_id,
-  #wall_color {
+
+  #wall_color:last-child{
+    border: none;
+    height: 30px;
+    background-color: rgb(54, 53, 53);
+  }
+  #wall_color,#wall_id{
     border: none;
     font-size: inherit;
     transition: width 200ms;
@@ -55,4 +65,5 @@ body {
     border-radius: 10px;
     cursor: pointer;
   }
+  
   
